@@ -1,0 +1,7 @@
+<ul class="sofa-thumbnail-bar">
+    <li ng-class="$index === selectedImageIndex ? 'sofa-thumbnail-bar__item--active' : 'sofa-thumbnail-bar__item'"
+        ng-click="setSelectedImage($index)"
+        ng-repeat="image in images">
+        <img class="sofa-thumbnail-bar__image" ng-src="{{image.thumbnail}}" alt=""/>
+    </li>
+</ul>
